@@ -11,10 +11,6 @@ public class Cli {
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
         String userName = sc.next();
-       // User.us();
-
         System.out.println("Hello, " + userName  + " !");
-       // return userName;
-
     }
 }
