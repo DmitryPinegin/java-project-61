@@ -4,3 +4,5 @@
 <a href="https://codeclimate.com/github/DmitryPinegin/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/cf88d17354db9f924622/maintainability" /></a>
 
 <a href="https://asciinema.org/a/UJ8yKFEm5QjTSrBIx5KR8ZdIf" target="_blank"><img src="https://asciinema.org/a/UJ8yKFEm5QjTSrBIx5KR8ZdIf.svg" /></a>
+
+<a href="https://asciinema.org/a/S7sPaaoDU8wluSEUEOGnf39nq" target="_blank"><img src="https://asciinema.org/a/S7sPaaoDU8wluSEUEOGnf39nq.svg" /></a>
