@@ -13,6 +13,7 @@ public class Calc {
         Random random = new Random();
 
         System.out.println("What is the result of the expression?");
+
         int a = 1;
         int b = 100;
         int[] randomNumbers = new int[6];

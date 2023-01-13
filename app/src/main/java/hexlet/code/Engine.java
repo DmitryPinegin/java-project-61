@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Engine {
     public static String userName;
     public static String line;
-//    public static int result;
 
     public static String userNameScanner() {
         Scanner sc = new Scanner(System.in);
