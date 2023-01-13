@@ -6,3 +6,5 @@
 <a href="https://asciinema.org/a/UJ8yKFEm5QjTSrBIx5KR8ZdIf" target="_blank"><img src="https://asciinema.org/a/UJ8yKFEm5QjTSrBIx5KR8ZdIf.svg" /></a>
 
 <a href="https://asciinema.org/a/S7sPaaoDU8wluSEUEOGnf39nq" target="_blank"><img src="https://asciinema.org/a/S7sPaaoDU8wluSEUEOGnf39nq.svg" /></a>
+
+<a href="https://asciinema.org/a/zfFPLGlXOWWxMD9ZqRwbuc5Zh" target="_blank"><img src="https://asciinema.org/a/zfFPLGlXOWWxMD9ZqRwbuc5Zh.svg" /></a>
