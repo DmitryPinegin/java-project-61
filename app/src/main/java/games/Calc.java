@@ -14,15 +14,13 @@ public class Calc {
 
         System.out.println("What is the result of the expression?");
 
-        int a = 1;
-        int b = 100;
         int[] randomNumbers = new int[6];
-        randomNumbers[0] = (int) (a + Math.random() * b);
-        randomNumbers[1] = (int) (a + Math.random() * b);
-        randomNumbers[2] = (int) (a + Math.random() * b);
-        randomNumbers[3] = (int) (a + Math.random() * b);
-        randomNumbers[4] = (int) (a + Math.random() * b);
-        randomNumbers[5] = (int) (a + Math.random() * b);
+        randomNumbers[0] = random.nextInt(100);
+        randomNumbers[1] = random.nextInt(100);
+        randomNumbers[2] = random.nextInt(100);
+        randomNumbers[3] = random.nextInt(100);
+        randomNumbers[4] = random.nextInt(100);
+        randomNumbers[5] = random.nextInt(100);
 
 
         String[] operators = new String[]{"+", "-", "*"};

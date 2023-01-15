@@ -3,6 +3,7 @@ package hexlet.code;
 import games.Calc;
 import games.Even;
 import games.GCD;
+import games.Progression;
 
 import java.util.Scanner;
 public class App {
@@ -13,6 +14,7 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
 
         if (scanner.hasNextInt()) {
@@ -33,6 +35,10 @@ public class App {
                 case 4 -> {
                     System.out.println("Your choice: " + number);
                     GCD.greatestCommonDivisor();
+                }
+                case 5 -> {
+                    System.out.println("Your choice: " + number);
+                    Progression.arithmeticProgression();
                 }
                 case 0 -> {
                     System.out.println("Your choice: " + number + "\nGood Bye !");
