@@ -13,9 +13,9 @@ public class Progression {
     public static String arithmeticProgression() {
         Random random = new Random();
 
-        int c = random.nextInt(11);
-        int c1 = random.nextInt(11);
-        int c2 = random.nextInt(11);
+        int c = 1 + random.nextInt(11);
+        int c1 = 1 + random.nextInt(11);
+        int c2 = 1 + random.nextInt(11);
         int d = 1 + random.nextInt(11);
         int d1 = 1 + random.nextInt(11);
         int d2 = 1 + random.nextInt(11);
