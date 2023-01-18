@@ -10,3 +10,5 @@
 <a href="https://asciinema.org/a/zfFPLGlXOWWxMD9ZqRwbuc5Zh" target="_blank"><img src="https://asciinema.org/a/zfFPLGlXOWWxMD9ZqRwbuc5Zh.svg" /></a>
 ### Progression games:
 <a href="https://asciinema.org/a/cJidC3NMd90RZGeIsV1wqCAXu" target="_blank"><img src="https://asciinema.org/a/cJidC3NMd90RZGeIsV1wqCAXu.svg" /></a>
+### Prime games:
+<a href="https://asciinema.org/a/Nlz81EBL76LdHtqSZslNz6FXG" target="_blank"><img src="https://asciinema.org/a/Nlz81EBL76LdHtqSZslNz6FXG.svg" /></a>
