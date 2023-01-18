@@ -1,18 +1,12 @@
 package games;
-
 import hexlet.code.Engine;
 import org.apache.commons.lang3.math.NumberUtils;
-
 import java.util.Random;
-
 import static hexlet.code.Engine.line;
 import static hexlet.code.Engine.userName;
-
-
 public class Progression {
     public static String arithmeticProgression() {
         Random random = new Random();
-
         int c = 1 + random.nextInt(11);
         int c1 = 1 + random.nextInt(11);
         int c2 = 1 + random.nextInt(11);
@@ -28,8 +22,6 @@ public class Progression {
         int[] v = new int[e];
         int[] v1 = new int[e1];
         int[] v2 = new int[e2];
-
-
         for (int i = 0; i < v.length; i++) {
             v[i] = c + (d * i);
         }
@@ -40,7 +32,6 @@ public class Progression {
             v2[i2] = c2 + (d2 * i2);
         }
         Engine.userNameScanner();
-
         System.out.println("What number is missing in the progression?");
         System.out.print("Question:");
         int f = 0;
@@ -58,15 +49,13 @@ public class Progression {
         int u = NumberUtils.toInt(line);
         for (int a = 0; a < v.length; a++) {
             if (u == 0) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f + ".\n"
-                        + "Let's try again, " + userName + " !");
+                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f + ".\nLet's try again, " + userName + " !");
                 return null;
             } else if (f == u) {
                 System.out.println("Your answer: " + u + "\nCorrect!");
                 break;
             } else if (f != u) {
-                System.out.println("'" + u + "'" + " is wrong answer ;(. Correct answer was " + f + ".\n"
-                        + "Let's try again, " + userName + " !");
+                System.out.println("'" + u + "'" + " is wrong answer ;(. Correct answer was " + f + ".\nLet's try again, " + userName + " !");
                 return null;
             }
         }
@@ -86,15 +75,13 @@ public class Progression {
         int u1 = NumberUtils.toInt(line);
         for (int a = 0; a < v1.length; a++) {
             if (u1 == 0) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f1 + ".\n"
-                            + "Let's try again, " + userName + " !");
+                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f1 + ".\nLet's try again, " + userName + " !");
                 return null;
             } else if (f1 == u1) {
                 System.out.println("Your answer: " + u1 + "\nCorrect!");
                 break;
             } else if (f1 != u1) {
-                System.out.println("'" + u1 + "'" + " is wrong answer ;(. Correct answer was " + f1 + ".\n"
-                            + "Let's try again, " + userName + " !");
+                System.out.println("'" + u1 + "'" + " is wrong answer ;(. Correct answer was " + f1 + ".\nLet's try again, " + userName + " !");
                 return null;
             }
         }
@@ -114,16 +101,14 @@ public class Progression {
         int u2 = NumberUtils.toInt(line);
         for (int a = 0; a < v2.length; a++) {
             if (u2 == 0) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f2 + ".\n"
-                        + "Let's try again, " + userName + " !");
+                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f2 + ".\nLet's try again, " + userName + " !");
                 return null;
             } else if (f2 == u2) {
                 System.out.println("Your answer: " + u2 + "\nCorrect!");
                 System.out.println("Congratulations, " + userName + " !");
                 break;
             } else if (f2 != u2) {
-                System.out.println("'" + u2 + "'" + " is wrong answer ;(. Correct answer was " + f2 + ".\n"
-                        + "Let's try again, " + userName + " !");
+                System.out.println("'" + u2 + "'" + " is wrong answer ;(. Correct answer was " + f2 + ".\nLet's try again, " + userName + " !");
                 return null;
             }
         } return null;
