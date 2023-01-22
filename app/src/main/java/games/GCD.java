@@ -8,14 +8,7 @@ public class GCD {
     public static void greatestCommonDivisor() {
         Engine.userNameScanner();
         System.out.println("Find the greatest common divisor of given numbers.");
-        Random random = new Random();
-        int[] randomNumbers = new int[6];
-        randomNumbers[0] = random.nextInt(100);
-        randomNumbers[1] = random.nextInt(100);
-        randomNumbers[2] = random.nextInt(100);
-        randomNumbers[3] = random.nextInt(100);
-        randomNumbers[4] = random.nextInt(100);
-        randomNumbers[5] = random.nextInt(100);
+        int[] randomNumbers = Engine.randomNumbers();
         int gcd = 1;
         for (var s = 0; s <= randomNumbers.length; s++) {
             if (s == 0) {

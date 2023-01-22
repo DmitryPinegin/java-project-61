@@ -10,18 +10,9 @@ import static hexlet.code.Engine.userName;
 public class Calc {
     public static void gameCalc() {
         Engine.userNameScanner();
+        Engine.randomNumbers();
         Random random = new Random();
-
         System.out.println("What is the result of the expression?");
-
-        int[] randomNumbers = new int[6];
-        randomNumbers[0] = random.nextInt(100);
-        randomNumbers[1] = random.nextInt(100);
-        randomNumbers[2] = random.nextInt(100);
-        randomNumbers[3] = random.nextInt(100);
-        randomNumbers[4] = random.nextInt(100);
-        randomNumbers[5] = random.nextInt(100);
-
 
         String[] operators = new String[]{"+", "-", "*"};
         int i1 = random.nextInt(3);
@@ -35,9 +26,10 @@ public class Calc {
         int res2 = 0;
         int res3 = 0;
 
+        int[] randomNumbers = Engine.randomNumbers();
         switch (ch1) {
             case "+" -> {
-                res1 = randomNumbers[0] + randomNumbers[1];
+                res1 = (randomNumbers[0]) + randomNumbers[1];
             }
 
             case "-" -> {
