@@ -2,118 +2,30 @@ package games;
 
 import hexlet.code.Engine;
 
-import java.util.Random;
-
-import static hexlet.code.Engine.line;
-import static hexlet.code.Engine.userName;
-
 public class Calc {
+    private static String gameDescription = "What is the result of the expression?\n";
+    private static String[] listOfOperators = {"+", "-", "*"};
+    private static int number = listOfOperators.length;
+    private static int expression(int firstNumber, int secondNumber, String operator) {
+        return switch (operator) {
+            case "+" -> firstNumber + secondNumber;
+            case "-" -> firstNumber - secondNumber;
+            case "*" -> firstNumber * secondNumber;
+            default -> throw new RuntimeException("Unexpected operator");
+        };
+    }
     public static void gameCalc() {
-        Engine.userNameScanner();
- //       Engine.randomNumbers();
-        Random random = new Random();
-        int[] randomNumbers = new int[6];
-        randomNumbers[0] = random.nextInt(100);
-        randomNumbers[1] = random.nextInt(100);
-        randomNumbers[2] = random.nextInt(100);
-        randomNumbers[3] = random.nextInt(100);
-        randomNumbers[4] = random.nextInt(100);
-        randomNumbers[5] = random.nextInt(100);
-        System.out.println("What is the result of the expression?");
-
-        String[] operators = new String[]{"+", "-", "*"};
-        int i1 = random.nextInt(3);
-        int i2 = random.nextInt(3);
-        int i3 = random.nextInt(3);
-        String ch1 = operators[i1];
-        String ch2 = operators[i2];
-        String ch3 = operators[i3];
-
-        int res1 = 0;
-        int res2 = 0;
-        int res3 = 0;
-
- //       int[] randomNumbers = Engine.randomNumbers();
-        switch (ch1) {
-            case "+" -> {
-                res1 = (randomNumbers[0]) + randomNumbers[1];
-            }
-
-            case "-" -> {
-                res1 = randomNumbers[0] - randomNumbers[1];
-            }
-
-            default -> {
-                res1 = randomNumbers[0] * randomNumbers[1];
-            }
-
+        String randomExpression;
+        int firstNumber;
+        int secondNumber;
+        String[][] dataGame = new String[Engine.rounds][2];
+        for (int i = 0; i < Engine.rounds; i++) {
+            firstNumber = Engine.randomNumber(Engine.maxNumber);
+            secondNumber = Engine.randomNumber(Engine.maxNumber);
+            randomExpression = listOfOperators[Engine.randomNumber(number)];
+            dataGame[i][Engine.question] = firstNumber + " " + randomExpression + " " + secondNumber;
+            dataGame[i][Engine.answer] = String.valueOf(expression(firstNumber, secondNumber, randomExpression));
         }
-        switch (ch2) {
-            case "+" -> {
-                res2 = randomNumbers[2] + randomNumbers[3];
-            }
-
-            case "-" -> {
-                res2 = randomNumbers[2] - randomNumbers[3];
-            }
-
-            default -> {
-                res2 = randomNumbers[2] * randomNumbers[3];
-            }
-
-        }
-        switch (ch3) {
-            case "+" -> {
-                res3 = randomNumbers[4] + randomNumbers[5];
-            }
-
-            case "-" -> {
-                res3 = randomNumbers[4] - randomNumbers[5];
-            }
-
-            default -> {
-                res3 = randomNumbers[4] * randomNumbers[5];
-            }
-
-        }
-        String r1 = Integer.toString(res1);
-        String r2 = Integer.toString(res2);
-        String r3 = Integer.toString(res3);
-
-
-        for (var s = 0; s <= randomNumbers.length; s++) {
-            if (s == 0) {
-                System.out.println("Question: " + randomNumbers[0] + ch1 + randomNumbers[1]);
-            } else if (s == 3) {
-                System.out.println("Question: " + randomNumbers[2] + ch2 + randomNumbers[3]);
-            } else if (s == 6) {
-                System.out.println("Question: " + randomNumbers[4] + ch3 + randomNumbers[5]);
-            }
-            Engine.solutionScanner();
-
-            if (s == 6 && r3.equals(line)) {
-                System.out.println("Your answer: " + line + "\nCorrect!");
-                System.out.println("Congratulations, " + userName + "!");
-
-            } else if (r1.equals(line) || r2.equals(line) || r3.equals(line)) {
-                System.out.println("Your answer: " + line + "\nCorrect!");
-                s = s + 2;
-            } else if (!r1.equals(line) && s == 0) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + r1 + ".\n"
-                        + "Let's try again, " + userName + "!");
-                break;
-
-            } else if (!r2.equals(line) && s == 3) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + r2 + ".\n"
-                        + "Let's try again, " + userName + "!");
-                break;
-
-            } else if (!r3.equals(line) && s == 6) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + r3 + ".\n"
-                        + "Let's try again, " + userName + "!");
-                break;
-
-            }
-        }
+        Engine.launch(dataGame, gameDescription);
     }
 }

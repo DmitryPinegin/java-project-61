@@ -1,35 +1,39 @@
 package hexlet.code;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class Engine {
-    public static String userName;
-    public static String line;
-
-    public static String userNameScanner() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        userName = sc.next();
-        System.out.println("Hello, " + userName  + "!");
-        return userName;
+    public static int maxNumber = 200;
+    public static int randomNumber(int limit) {
+        return (int) (Math.random() * limit);
     }
+    public static int rounds = 3;
+    public static int question = 0;
+    public static int answer = 1;
+    public static void launch(String[][] dataGame, String gameDescription) {
+        int i = 0;
+        String playerAnswer;
+        Scanner in = new Scanner(System.in);
 
-    public static String solutionScanner() {
-        Scanner scan = new Scanner(System.in);
-        line = scan.next();
-        return  line;
-    }
-    public static int[] randomNumbers() {
-        Random random = new Random();
-        int[] randomNumbers = new int[6];
-        randomNumbers[0] = random.nextInt(100);
-        randomNumbers[1] = random.nextInt(100);
-        randomNumbers[2] = random.nextInt(100);
-        randomNumbers[3] = random.nextInt(100);
-        randomNumbers[4] = random.nextInt(100);
-        randomNumbers[5] = random.nextInt(100);
-        return randomNumbers;
+        System.out.print("Welcome to the Brain Games! \nMay I have your name? ");
+        String playerName = in.nextLine();
+        System.out.println("Hello, " + playerName + "!");
+        System.out.println(gameDescription);
+        while (i < Engine.rounds) {
+            System.out.println("Question: " + dataGame[i][question]);
+            System.out.print("Your answer: ");
+            playerAnswer = in.nextLine();
+            if (playerAnswer.equals(dataGame[i][answer])) {
+                System.out.println("Correct!");
+                i++;
+            } else {
+                System.out.println("'" + playerAnswer + "'" + " is wrong answer ;(. Correct answer was '"
+                        + dataGame[i][answer] + "'. \nLet's try again, " + playerName + "!");
+                return;
+            }
+        }
+        System.out.println("Congratulations, " + playerName + "!");
     }
 }
+
