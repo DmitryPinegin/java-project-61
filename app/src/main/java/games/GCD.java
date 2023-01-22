@@ -49,7 +49,8 @@ public class GCD {
             Engine.solutionScanner();
             int i1 = NumberUtils.toInt(line);
             if (i1 == 0) {
-                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + gcd + ".\nLet's try again, " + userName + " !");
+                System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + gcd
+                        + ".\nLet's try again, " + userName + " !");
                 break;
             }
             if (s == 6 && gcd == i1) {
@@ -59,14 +60,17 @@ public class GCD {
                 System.out.println("Your answer: " + i1 + "\nCorrect!");
                 s = s + 2;
             } else if (gcd != i1 && s == 0) {
-                System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd + ".\nLet's try again, " + userName + " !");
+                System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd
+                        + ".\nLet's try again, " + userName + " !");
                 break;
             } else if (gcd != i1 && s == 3) {
-                System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd + ".\n"
+                System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd
+                        + ".\n"
                         + "Let's try again, " + userName + " !");
                 break;
             } else if (gcd != i1 && s == 6) {
-                System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd + ".\nLet's try again, " + userName + " !");
+                System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd
+                        + ".\nLet's try again, " + userName + " !");
                 break;
             }
         }

@@ -23,12 +23,14 @@ public class Prime {
         if (probablePrime && line.equals("yes")) {
             System.out.println("Your answer: " + line + "\nCorrect!");
         } else if (probablePrime && !line.equals("yes")) {
-            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, " + userName + " !");
+            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
+                    + userName + " !");
             return null;
         } else if (!probablePrime && line.equals("no")) {
             System.out.println("Your answer: " + line + "\nCorrect!");
         } else {
-            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, " + userName + " !");
+            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
+                    + userName + " !");
             return null;
         }
         System.out.println("Question:" + c1);
@@ -36,12 +38,14 @@ public class Prime {
         if (probablePrime1 && line.equals("yes")) {
             System.out.println("Your answer: " + line + "\nCorrect!");
         } else if (probablePrime1 && !line.equals("yes")) {
-            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, " + userName + " !");
+            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
+                    + userName + " !");
             return null;
         } else if (!probablePrime1 && line.equals("no")) {
             System.out.println("Your answer: " + line + "\nCorrect!");
         } else {
-            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, " + userName + " !");
+            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
+                    + userName + " !");
             return null;
         }
         System.out.println("Question:" + c2);
@@ -50,13 +54,15 @@ public class Prime {
             System.out.println("Your answer: " + line + "\nCorrect!");
             System.out.println("Congratulations, " + userName + " !");
         } else if (probablePrime2 && !line.equals("yes")) {
-            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, " + userName + " !");
+            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
+                    + userName + " !");
             return null;
         } else if (!probablePrime2 && line.equals("no")) {
             System.out.println("Your answer: " + line + "\nCorrect!");
             System.out.println("Congratulations, " + userName + " !");
         } else {
-            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, " + userName + " !");
+            System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
+                    + userName + " !");
         }
         return null;
     }
