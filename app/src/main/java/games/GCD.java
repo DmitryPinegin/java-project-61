@@ -14,12 +14,12 @@ public class GCD {
     public static void greatestCommonDivisor() {
         int firstNumber;
         int secondNumber;
-        String[][] gameData = new String[Engine.rounds][2];
-        for (int i = 0; i < Engine.rounds; i++) {
-            firstNumber = Engine.randomNumber(Engine.maxNumber);
-            secondNumber = Engine.randomNumber(Engine.maxNumber);
-            gameData[i][Engine.question] = firstNumber + " " + secondNumber;
-            gameData[i][Engine.answer] = Integer.toString(gcdOfTwoNumbers(firstNumber, secondNumber));
+        String[][] gameData = new String[Engine.ROUNDS][2];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            firstNumber = Engine.randomNumber(Engine.MAX_NUMBER);
+            secondNumber = Engine.randomNumber(Engine.MAX_NUMBER);
+            gameData[i][Engine.QUESTION] = firstNumber + " " + secondNumber;
+            gameData[i][Engine.ANSVER] = Integer.toString(gcdOfTwoNumbers(firstNumber, secondNumber));
         }
         Engine.launch(gameData, gameDescription);
     }

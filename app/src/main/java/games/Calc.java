@@ -18,13 +18,13 @@ public class Calc {
         String randomExpression;
         int firstNumber;
         int secondNumber;
-        String[][] dataGame = new String[Engine.rounds][2];
-        for (int i = 0; i < Engine.rounds; i++) {
-            firstNumber = Engine.randomNumber(Engine.maxNumber);
-            secondNumber = Engine.randomNumber(Engine.maxNumber);
+        String[][] dataGame = new String[Engine.ROUNDS][2];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            firstNumber = Engine.randomNumber(Engine.MAX_NUMBER);
+            secondNumber = Engine.randomNumber(Engine.MAX_NUMBER);
             randomExpression = listOfOperators[Engine.randomNumber(number)];
-            dataGame[i][Engine.question] = firstNumber + " " + randomExpression + " " + secondNumber;
-            dataGame[i][Engine.answer] = String.valueOf(expression(firstNumber, secondNumber, randomExpression));
+            dataGame[i][Engine.QUESTION] = firstNumber + " " + randomExpression + " " + secondNumber;
+            dataGame[i][Engine.ANSVER] = String.valueOf(expression(firstNumber, secondNumber, randomExpression));
         }
         Engine.launch(dataGame, gameDescription);
     }

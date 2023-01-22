@@ -12,11 +12,11 @@ public class Prime {
 
     public static void primeNumber() {
         int randomNumber;
-        String[][] dataGame = new String[Engine.rounds][2];
-        for (int i = 0; i < Engine.rounds; i++) {
-            randomNumber = Engine.randomNumber(Engine.maxNumber);
-            dataGame[i][Engine.question] = Integer.toString(randomNumber);
-            dataGame[i][Engine.answer] = isPrime(randomNumber) ? "yes" : "no";
+        String[][] dataGame = new String[Engine.ROUNDS][2];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            randomNumber = Engine.randomNumber(Engine.MAX_NUMBER);
+            dataGame[i][Engine.QUESTION] = Integer.toString(randomNumber);
+            dataGame[i][Engine.ANSVER] = isPrime(randomNumber) ? "yes" : "no";
         }
         Engine.launch(dataGame, gameDescription);
     }
