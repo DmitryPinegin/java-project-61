@@ -3,10 +3,10 @@ import hexlet.code.Engine;
 
 public class Progression {
     private static String gameDescription = "What number is missing in the progression?\n";
-    public static int maxLength = 10;
-    public static int firstElement = 10;
-    public static int maxStep = 10;
-    public static int numberMissingElement = maxLength;
+    private static int maxLength = 10;
+    private static int firstElement = 10;
+    private static int maxStep = 10;
+    private static int numberMissingElement = maxLength;
 
     public static int[] getArithmeticProgression(int element, int stepOfProgression, int lengthOfProgression) {
         int[] arithmeticProgression = new int[lengthOfProgression];

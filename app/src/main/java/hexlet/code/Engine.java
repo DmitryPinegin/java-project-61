@@ -4,13 +4,13 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static int maxNumber = 200;
+    public static final int maxNumber = 200;
     public static int randomNumber(int limit) {
         return (int) (Math.random() * limit);
     }
-    public static int rounds = 3;
-    public static int question = 0;
-    public static int answer = 1;
+    public static final int rounds = 3;
+    public static final int question = 0;
+    public static final int answer = 1;
     public static void launch(String[][] dataGame, String gameDescription) {
         int i = 0;
         String playerAnswer;
