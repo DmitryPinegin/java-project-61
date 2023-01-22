@@ -7,7 +7,7 @@ public class Even {
         return (number % 2 == 0);
     }
     public static void gameEven() {
-        String[][] gameData = new String[Engine.ROUNDS][2];
+        String[][] gameData = Engine.dataGame();
         for (int i = 0; i < Engine.ROUNDS; i++) {
             int randomNumber = Engine.randomNumber(Engine.MAX_NUMBER);
             gameData[i][Engine.QUESTION] = Integer.toString(randomNumber);

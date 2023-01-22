@@ -12,7 +12,7 @@ public class Prime {
 
     public static void primeNumber() {
         int randomNumber;
-        String[][] dataGame = new String[Engine.ROUNDS][2];
+        String[][] dataGame = Engine.dataGame();
         for (int i = 0; i < Engine.ROUNDS; i++) {
             randomNumber = Engine.randomNumber(Engine.MAX_NUMBER);
             dataGame[i][Engine.QUESTION] = Integer.toString(randomNumber);

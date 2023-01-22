@@ -14,7 +14,7 @@ public class GCD {
     public static void greatestCommonDivisor() {
         int firstNumber;
         int secondNumber;
-        String[][] gameData = new String[Engine.ROUNDS][2];
+        String[][] gameData = Engine.dataGame();
         for (int i = 0; i < Engine.ROUNDS; i++) {
             firstNumber = Engine.randomNumber(Engine.MAX_NUMBER);
             secondNumber = Engine.randomNumber(Engine.MAX_NUMBER);

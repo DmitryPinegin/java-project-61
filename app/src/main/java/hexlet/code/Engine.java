@@ -8,6 +8,10 @@ public class Engine {
     public static int randomNumber(int limit) {
         return (int) (Math.random() * limit);
     }
+    public static String[][] dataGame() {
+        String[][] dataGame = new String[Engine.ROUNDS][2];
+        return dataGame;
+    }
     public static final int ROUNDS = 3;
     public static final int QUESTION = 0;
     public static final int ANSVER = 1;

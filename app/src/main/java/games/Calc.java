@@ -18,7 +18,7 @@ public class Calc {
         String randomExpression;
         int firstNumber;
         int secondNumber;
-        String[][] dataGame = new String[Engine.ROUNDS][2];
+        String[][] dataGame = Engine.dataGame();
         for (int i = 0; i < Engine.ROUNDS; i++) {
             firstNumber = Engine.randomNumber(Engine.MAX_NUMBER);
             secondNumber = Engine.randomNumber(Engine.MAX_NUMBER);

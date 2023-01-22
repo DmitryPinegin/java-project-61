@@ -23,7 +23,8 @@ public class Progression {
     public static void arithmeticProgression() {
         int firstElem;
         int stepOfProgression;
-        String[][] dataGame = new String[Engine.ROUNDS][2];
+//        String[][] dataGame = new String[Engine.ROUNDS][2];
+        String[][] dataGame = Engine.dataGame();
 
         for (int j = 0; j < Engine.ROUNDS; j++) {
             firstElem = Engine.randomNumber(FIRST_ELEMENT);
