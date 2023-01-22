@@ -1,62 +1,58 @@
 package hexlet.code;
 
-import games.Calc;
 import games.Even;
-import games.GCD;
+import games.Calc;
 import games.Progression;
 import games.Prime;
-
+import games.GCD;
 import java.util.Scanner;
 public class App {
+    private static final int EXIT = 0;
+    private static final int GREETING = 1;
+    private static final int GAME_EVEN_NUMBERS = 2;
+    private static final int GAME_CALCULATOR = 3;
+    private static final int GAME_GCD = 4;
+    private static final int GAME_ARITHMETIC_PROGRESSION = 5;
+    private static final int GAME_PRIME_NUMBER = 6;
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter the game number and press Enter.");
-        System.out.println("1 - Greet");
-        System.out.println("2 - Even");
-        System.out.println("3 - Calc");
-        System.out.println("4 - GCD");
-        System.out.println("5 - Progression");
-        System.out.println("6 - Prime");
-        System.out.println("0 - Exit");
+        Scanner in = new Scanner(System.in);
+        System.out.println("""
+                Please enter the game number and press Enter.
+                 1 - Greet\s
+                 2 - Even\s
+                 3 - Calc\s
+                 4 - GCD\s
+                 5 - Progression\s
+                 6 - Prime\s
+                 0 - Exit""");
+        int gameNumber = in.nextInt();
+        System.out.println("Your choice: " + gameNumber + "\n");
 
-        if (scanner.hasNextInt()) {
-            int number = scanner.nextInt();
-            switch (number) {
-                case 1 -> {
-                    System.out.println("Your choice: " + number);
-                    Cli.nameRequest();
-                }
-                case 2 -> {
-                    System.out.println("Your choice: " + number);
-                    Even.gameEven();
-                }
-                case 3 -> {
-                    System.out.println("Your choice: " + number);
-                    Calc.gameCalc();
-                }
-                case 4 -> {
-                    System.out.println("Your choice: " + number);
-                    GCD.greatestCommonDivisor();
-                }
-                case 5 -> {
-                    System.out.println("Your choice: " + number);
-                    Progression.arithmeticProgression();
-                }
-                case 6 -> {
-                    System.out.println("Your choice: " + number);
-                    Prime.primeNumber();
-                }
-                case 0 -> {
-                    System.out.println("Your choice: " + number + "\nGood Bye !");
-                }
-                default -> {
-                    System.out.println("Value is not valid! Try again!");
-                }
-            }
-        } else {
-            System.out.println("Value is not valid! Try again!");
+        switch (gameNumber) {
+            case EXIT:
+                System.out.println("Your choice: " + 0 + "\nGood Bye !");
+                return;
+            case GREETING:
+                Cli.nameRequest();
+                break;
+            case GAME_EVEN_NUMBERS:
+                Even.gameEven();
+                break;
+            case GAME_CALCULATOR:
+                Calc.gameCalc();
+                break;
+            case GAME_GCD:
+                GCD.greatestCommonDivisor();
+                break;
+            case GAME_ARITHMETIC_PROGRESSION:
+                Progression.arithmeticProgression();
+                break;
+            case GAME_PRIME_NUMBER:
+                Prime.primeNumber();
+                break;
+            default:
+                System.out.println("There is no such game, sorry.");
         }
-        scanner.close();
     }
 }
 
