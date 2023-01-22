@@ -10,8 +10,15 @@ import static hexlet.code.Engine.userName;
 public class Calc {
     public static void gameCalc() {
         Engine.userNameScanner();
-        Engine.randomNumbers();
+ //       Engine.randomNumbers();
         Random random = new Random();
+        int[] randomNumbers = new int[6];
+        randomNumbers[0] = random.nextInt(100);
+        randomNumbers[1] = random.nextInt(100);
+        randomNumbers[2] = random.nextInt(100);
+        randomNumbers[3] = random.nextInt(100);
+        randomNumbers[4] = random.nextInt(100);
+        randomNumbers[5] = random.nextInt(100);
         System.out.println("What is the result of the expression?");
 
         String[] operators = new String[]{"+", "-", "*"};
@@ -26,7 +33,7 @@ public class Calc {
         int res2 = 0;
         int res3 = 0;
 
-        int[] randomNumbers = Engine.randomNumbers();
+ //       int[] randomNumbers = Engine.randomNumbers();
         switch (ch1) {
             case "+" -> {
                 res1 = (randomNumbers[0]) + randomNumbers[1];
