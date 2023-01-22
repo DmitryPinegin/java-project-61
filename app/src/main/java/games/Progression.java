@@ -50,14 +50,14 @@ public class Progression {
         for (int a = 0; a < v.length; a++) {
             if (u == 0) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 return null;
             } else if (f == u) {
                 System.out.println("Your answer: " + u + "\nCorrect!");
                 break;
             } else if (f != u) {
                 System.out.println("'" + u + "'" + " is wrong answer ;(. Correct answer was " + f
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 return null;
             }
         }
@@ -78,14 +78,14 @@ public class Progression {
         for (int a = 0; a < v1.length; a++) {
             if (u1 == 0) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f1
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 return null;
             } else if (f1 == u1) {
                 System.out.println("Your answer: " + u1 + "\nCorrect!");
                 break;
             } else if (f1 != u1) {
                 System.out.println("'" + u1 + "'" + " is wrong answer ;(. Correct answer was " + f1
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 return null;
             }
         }
@@ -106,15 +106,15 @@ public class Progression {
         for (int a = 0; a < v2.length; a++) {
             if (u2 == 0) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + f2
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 return null;
             } else if (f2 == u2) {
                 System.out.println("Your answer: " + u2 + "\nCorrect!");
-                System.out.println("Congratulations, " + userName + " !");
+                System.out.println("Congratulations, " + userName + "!");
                 break;
             } else if (f2 != u2) {
                 System.out.println("'" + u2 + "'" + " is wrong answer ;(. Correct answer was " + f2
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 return null;
             }
         } return null;

@@ -86,24 +86,24 @@ public class Calc {
 
             if (s == 6 && r3.equals(line)) {
                 System.out.println("Your answer: " + line + "\nCorrect!");
-                System.out.println("Congratulations, " + userName + " !");
+                System.out.println("Congratulations, " + userName + "!");
 
             } else if (r1.equals(line) || r2.equals(line) || r3.equals(line)) {
                 System.out.println("Your answer: " + line + "\nCorrect!");
                 s = s + 2;
             } else if (!r1.equals(line) && s == 0) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + r1 + ".\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
                 break;
 
             } else if (!r2.equals(line) && s == 3) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + r2 + ".\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
                 break;
 
             } else if (!r3.equals(line) && s == 6) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + r3 + ".\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
                 break;
 
             }

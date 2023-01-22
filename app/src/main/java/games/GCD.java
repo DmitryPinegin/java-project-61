@@ -43,27 +43,27 @@ public class GCD {
             int i1 = NumberUtils.toInt(line);
             if (i1 == 0) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was " + gcd
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 break;
             }
             if (s == 6 && gcd == i1) {
                 System.out.println("Your answer: " + i1 + "\nCorrect!");
-                System.out.println("Congratulations, " + userName + " !");
+                System.out.println("Congratulations, " + userName + "!");
             } else if (gcd == i1) {
                 System.out.println("Your answer: " + i1 + "\nCorrect!");
                 s = s + 2;
             } else if (gcd != i1 && s == 0) {
                 System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 break;
             } else if (gcd != i1 && s == 3) {
                 System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd
                         + ".\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
                 break;
             } else if (gcd != i1 && s == 6) {
                 System.out.println("'" + i1 + "'" + " is wrong answer ;(. Correct answer was " + gcd
-                        + ".\nLet's try again, " + userName + " !");
+                        + ".\nLet's try again, " + userName + "!");
                 break;
             }
         }

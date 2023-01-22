@@ -24,28 +24,28 @@ public class Even {
 
             if (i == 2 && randomNumbers[i] % 2 == 0 && line.equals("yes")) {
                 System.out.println("Your answer: yes\nCorrect!");
-                System.out.println("Congratulations, " + userName + " !");
+                System.out.println("Congratulations, " + userName + "!");
             } else if (i == 2 && randomNumbers[i] % 2 == 0 && !line.equals("yes")) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
             } else if (i == 2 && randomNumbers[i] % 2 != 0 && line.equals("no")) {
                 System.out.println("Your answer: no\nCorrect!");
                 System.out.println("Congratulations, " + userName + " !");
             } else if (i == 2 && randomNumbers[i] % 2 != 0 && !line.equals("no")) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
             } else if (randomNumbers[i] % 2 == 0 && line.equals("yes")) {
 
                 System.out.println("Your answer: yes\nCorrect!");
             } else if (randomNumbers[i] % 2 == 0 && !line.equals("yes")) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'yes'.\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
                 break;
             } else if (randomNumbers[i] % 2 != 0 && line.equals("no")) {
                 System.out.println("Your answer: no\nCorrect!");
             } else if (randomNumbers[i] % 2 != 0 && !line.equals("no")) {
                 System.out.println("'" + line + "'" + " is wrong answer ;(. Correct answer was 'no'.\n"
-                        + "Let's try again, " + userName + " !");
+                        + "Let's try again, " + userName + "!");
                 break;
             }
         }
